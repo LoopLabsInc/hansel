@@ -22,7 +22,9 @@ Or install it yourself as:
 
 Use it just like Logger! The only difference is you need to specify the Unique Transaction ID (UTID) in `#new`. The `#new` method takes all of the same parameters as the `Logger` class, after the UTID.
 
-You can initialize Hansel just like you would Logger. For most use cases, you should log to STDOUT, which is the default. As such, `Hansel.new('utid')` will suffice in most cases.
+You can initialize Hansel just like you would Logger. For most use cases, you should log to STDOUT, which is the default. As such, `Hansel::Logger.new('utid')` will suffice in most cases.
+
+You can also set the log level of `Hansel` the same way you would the normal Ruby `Logger` class: `hansel.level = Logger::INFO`
 
 ## Development
 

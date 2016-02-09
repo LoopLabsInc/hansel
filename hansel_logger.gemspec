@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jordan Stone"]
   spec.email         = ["jordan@getnotion.com"]
 
-  spec.summary       = %q{Hansel is a custom Logger subclass for making it simpler to attach a unique transaction ID (UTID) to all log messages.}
-  spec.description   = %q{Hansel is a custom Logger subclass for making it simpler to attach a unique transaction ID (UTID) to all log messages.}
+  spec.summary       = %q{Hansel is a custom logger for making it simpler to attach a unique transaction ID (UTID) to all log messages.}
+  spec.description   = %q{Hansel is a custom logger for making it simpler to attach a unique transaction ID (UTID) to all log messages.}
   spec.homepage      = "https://github.com/LoopLabsInc/hansel"
   spec.license       = "MIT"
 
