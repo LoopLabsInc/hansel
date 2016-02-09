@@ -1,5 +1,5 @@
 require "hansel/version"
-require "hansel/hansel"
+require "hansel/logger"
 
 module Hansel
 end
