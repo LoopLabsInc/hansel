@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'hansel/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "hansel"
+  spec.name          = "hansel_logger"
   spec.version       = Hansel::VERSION
   spec.authors       = ["Jordan Stone"]
   spec.email         = ["jordan@getnotion.com"]
