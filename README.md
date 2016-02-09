@@ -7,7 +7,7 @@ A logging framework
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'hansel-logger'
+gem 'hansel_logger'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install hansel-logger
+    $ gem install hansel_logger
 
 ## Usage
 
