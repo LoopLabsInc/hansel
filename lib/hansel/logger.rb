@@ -2,10 +2,12 @@ require 'logger'
 
 module Hansel
 	class Logger
+		@@logger = nil
+
 		def initialize(utid, name=STDOUT, shift_age = nil, shift_size = 50*1024*1024)
 			@utid = utid
-			@logger = ::Logger.new(name, shift_age, shift_size)
-			@logger.level = ::Logger::DEBUG
+			@@logger ||= ::Logger.new(name, shift_age, shift_size)
+			@@logger.level = ::Logger::DEBUG
 		end
 
 		def utid
@@ -13,27 +15,27 @@ module Hansel
 		end
 
 		def level=(level)
-			@logger.level = level
+			@@logger.level = level
 		end
 
 		def debug(message)
-			@logger.debug "#{@utid} ~~ #{message}"
+			@@logger.debug "#{@utid} ~~ #{message}"
 		end
 
 		def error(message)
-			@logger.error "#{@utid} ~~ #{message}"
+			@@logger.error "#{@utid} ~~ #{message}"
 		end
 
 		def fatal(message)
-			@logger.fatal "#{@utid} ~~ #{message}"
+			@@logger.fatal "#{@utid} ~~ #{message}"
 		end
 
 		def info(message)
-			@logger.info "#{@utid} ~~ #{message}"
+			@@logger.info "#{@utid} ~~ #{message}"
 		end
 
 		def warn(message)
-			@logger.warn "#{@utid} ~~ #{message}"
+			@@logger.warn "#{@utid} ~~ #{message}"
 		end
 	end
 end
