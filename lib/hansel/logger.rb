@@ -4,7 +4,7 @@ module Hansel
 	class Logger
 		@@logger = nil
 
-		def initialize(utid, name=STDOUT, shift_age = nil, shift_size = 50*1024*1024)
+		def initialize(utid, name=STDOUT, shift_age = nil, shift_size = nil)
 			@utid = utid
 			@@logger ||= ::Logger.new(name, shift_age, shift_size)
 			@@logger.level = ::Logger::DEBUG
